@@ -1,7 +1,12 @@
 aid: ge-healthcare-technologies
-url: https://raw.githubusercontent.com/api-evangelist/ge-healthcare-technologies/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/ge-healthcare-technologies/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.ge-healthcare-technologies.com
+description: >-
+  GE HealthCare Technologies is a global medical technology, pharmaceutical diagnostics,
+  and digital solutions innovator providing imaging, ultrasound, life care solutions,
+  patient monitoring, and pharmaceutical diagnostics.
