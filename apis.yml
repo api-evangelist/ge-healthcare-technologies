@@ -22,6 +22,10 @@ tags:
   - Medical Imaging
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/gehealthcare
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/gehealthcare
   - type: Website
     url: https://www.gehealthcare.com
   - type: Investor Relations
