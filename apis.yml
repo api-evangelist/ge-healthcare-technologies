@@ -22,6 +22,10 @@ tags:
   - Medical Imaging
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/ge-healthcare-technologies-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/ge-healthcare-technologies-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/gehealthcare
   - type: LinkedIn
