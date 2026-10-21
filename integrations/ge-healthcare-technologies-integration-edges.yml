@@ -270,6 +270,29 @@ edges:
       status is Active; several certified products on one rule set count once
   detected_by: sweep-payer-interop-caqh-core.py
   first_seen: '2026-10-21'
+- partner_name: AdvaMedDx (members)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.advamed.org/advameddx/members/
+  category: Diagnostics trade body member
+  contract_reference:
+    register: AdvaMedDx member list (advamed.org/advameddx/members)
+    standard: null
+    spec_file: null
+    role: advameddx-member
+    registered_name: GE HealthCare
+    matched_domain: gehealthcare.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    listed_website: https://www.gehealthcare.com/
+    signal_note: 'self-filed paid membership: listing alone = standard-participant; hand-reviewed'
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
 generated: '2026-10-18'
 method: searched
 source:
@@ -290,3 +313,9 @@ checked:
 - https://www.dataspring.com/core/core-certified-organizations-pending-and-current
 - https://www.hl7.org/about/davinci/members.cfm
 - https://x12.org/membership/list-of-members
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://www.advamed.org/advameddx/members/
