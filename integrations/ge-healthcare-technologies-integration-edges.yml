@@ -190,6 +190,86 @@ edges:
     identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   detected_by: sweep-medical-imaging-ihe.py
   first_seen: '2026-10-20'
+- partner_name: CAQH CORE Certification
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.dataspring.com/core/core-certified-organizations-pending-and-current
+  category: HIPAA administrative operating rules (eligibility, claims, ERA/EFT, prior auth)
+  contract_reference:
+    register: CAQH CORE certified organizations (caqh.org/core/core-certification -> dataspring.com)
+    spec_file: null
+    standard: CAQH CORE Operating Rules certification
+    role: certified clearinghouse
+    registered_name: GE Healthcare
+    matched_domain: gehealthcare.com
+    matched_by: domain+name-among-holders
+    market_fit: own apis.yml tags carry a health administration / health IT term
+    detected_by: sweep-payer-interop-caqh-core.py
+    detected: '2026-10-21'
+    identity: wikidata Q1152374 'GE HealthCare' P856 http://www.gehealthcare.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    listings:
+    - name: GE Healthcare
+      tab: clearinghouses
+      product: Centricity EDI Clearinghouse
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+      - rule_set: Claim Status
+        status: Active
+    - name: GE Healthcare
+      tab: vendors
+      product: Centricity Business Version 4.0 and Version 4.3
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+    - name: GE Healthcare
+      tab: vendors
+      product: Centricity Business Version 5.0 Eligibility/Benefits
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+      - rule_set: Claim Status
+        status: Active
+    - name: GE Healthcare
+      tab: vendors
+      product: Financial Risk Manager Version 6.1
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+      - rule_set: Claim Status
+        status: Active
+      - rule_set: Payment & Remittance
+        status: Active
+    certified_products:
+    - product: CAQH CORE Eligibility & Benefits
+      rule_set: Eligibility & Benefits
+      lapsed: false
+      products:
+      - Centricity EDI Clearinghouse
+      - Centricity Business Version 4.0 and Version 4.3
+      - Centricity Business Version 5.0 Eligibility/Benefits
+      - Financial Risk Manager Version 6.1
+    - product: CAQH CORE Claim Status
+      rule_set: Claim Status
+      lapsed: false
+      products:
+      - Centricity EDI Clearinghouse
+      - Centricity Business Version 5.0 Eligibility/Benefits
+      - Financial Risk Manager Version 6.1
+    - product: CAQH CORE Payment & Remittance
+      rule_set: Payment & Remittance
+      lapsed: false
+      products:
+      - Financial Risk Manager Version 6.1
+    signal_note: certified_products = one entry per CORE operating-rule SET (product type); lapsed when no listed
+      status is Active; several certified products on one rule set count once
+  detected_by: sweep-payer-interop-caqh-core.py
+  first_seen: '2026-10-21'
 generated: '2026-10-18'
 method: searched
 source:
@@ -201,3 +281,12 @@ checked:
 - https://listings.pcisecuritystandards.org/assessors_and_solutions
 - https://connectathon-results.ihe.net/custom-search/
 - https://product-registry.ihe.net/
+- https://confluence.hl7.org/display/DVP/Da+Vinci+Project+Members
+- https://data.cms.gov/provider-data/dataset/6jpm-sxkc
+- https://members.wedi.org/website-organization-directory/FindStartsWith?term=%23%21
+- https://www.caqh.org/core/certified-entities
+- https://www.caqh.org/core/core-certification
+- https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability
+- https://www.dataspring.com/core/core-certified-organizations-pending-and-current
+- https://www.hl7.org/about/davinci/members.cfm
+- https://x12.org/membership/list-of-members

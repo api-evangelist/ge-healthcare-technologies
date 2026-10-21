@@ -194,3 +194,83 @@
     identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null
+- slug: ge-healthcare-technologies-caqh-core-certification
+  label: CAQH CORE Certification
+  partner_name: CAQH CORE Certification
+  category: HIPAA administrative operating rules (eligibility, claims, ERA/EFT, prior auth)
+  type: register
+  channel: standard-directory
+  evidence: https://www.dataspring.com/core/core-certified-organizations-pending-and-current
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CAQH CORE certified organizations (caqh.org/core/core-certification -> dataspring.com)
+    spec_file: null
+    standard: CAQH CORE Operating Rules certification
+    role: certified clearinghouse
+    registered_name: GE Healthcare
+    matched_domain: gehealthcare.com
+    matched_by: domain+name-among-holders
+    market_fit: own apis.yml tags carry a health administration / health IT term
+    detected_by: sweep-payer-interop-caqh-core.py
+    detected: '2026-10-21'
+    identity: wikidata Q1152374 'GE HealthCare' P856 http://www.gehealthcare.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    listings:
+    - name: GE Healthcare
+      tab: clearinghouses
+      product: Centricity EDI Clearinghouse
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+      - rule_set: Claim Status
+        status: Active
+    - name: GE Healthcare
+      tab: vendors
+      product: Centricity Business Version 4.0 and Version 4.3
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+    - name: GE Healthcare
+      tab: vendors
+      product: Centricity Business Version 5.0 Eligibility/Benefits
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+      - rule_set: Claim Status
+        status: Active
+    - name: GE Healthcare
+      tab: vendors
+      product: Financial Risk Manager Version 6.1
+      rules:
+      - rule_set: Eligibility & Benefits
+        status: Active
+      - rule_set: Claim Status
+        status: Active
+      - rule_set: Payment & Remittance
+        status: Active
+    certified_products:
+    - product: CAQH CORE Eligibility & Benefits
+      rule_set: Eligibility & Benefits
+      lapsed: false
+      products:
+      - Centricity EDI Clearinghouse
+      - Centricity Business Version 4.0 and Version 4.3
+      - Centricity Business Version 5.0 Eligibility/Benefits
+      - Financial Risk Manager Version 6.1
+    - product: CAQH CORE Claim Status
+      rule_set: Claim Status
+      lapsed: false
+      products:
+      - Centricity EDI Clearinghouse
+      - Centricity Business Version 5.0 Eligibility/Benefits
+      - Financial Risk Manager Version 6.1
+    - product: CAQH CORE Payment & Remittance
+      rule_set: Payment & Remittance
+      lapsed: false
+      products:
+      - Financial Risk Manager Version 6.1
+    signal_note: certified_products = one entry per CORE operating-rule SET (product type); lapsed when no listed
+      status is Active; several certified products on one rule set count once
+  status: not-a-workflow
+  arazzo: null
